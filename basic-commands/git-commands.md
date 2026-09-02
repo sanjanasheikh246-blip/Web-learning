@@ -6,3 +6,4 @@ git branch -M main -> git branch create
 git add . -> staged all file
 git commit -m "basic setup" -> stage file commit
 ```
+6,7 must need for git commit
