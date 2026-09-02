@@ -1,4 +1,4 @@
-a=15
-b=20
+a = int(input('Enter a: '))
+b = int(input('Enter b: '))
 multi=a*b
 print(multi)
