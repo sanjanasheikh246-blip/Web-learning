@@ -5,3 +5,4 @@ ni file-name -> create new file
 cd .. -> back one directory
 cd language -> language ba onno j folder a jabo setar name
 ```
+print korte hole .pd er jonno python file er nam likhte hobe
