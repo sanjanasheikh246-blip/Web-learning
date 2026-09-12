@@ -3,5 +3,4 @@ def substract_of_two_number():
     b = int(input('Enter b: '))
     substract=a-b
     print(f'result : {substract}')
-
-substract_of_two_number()
+   

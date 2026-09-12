@@ -1,6 +1,5 @@
-def multi_of_two_number():
+def div_of_two_number():
     a = int(input('Enter a: '))
     b = int(input('Enter b: '))
     divi=a/b
     print(divi)
-    multi_of_two_number()

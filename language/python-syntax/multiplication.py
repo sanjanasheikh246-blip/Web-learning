@@ -3,4 +3,3 @@ def multi_of_two_number():
     b = int(input('Enter b: '))
     multi=a*b
     print(multi)
-    multi_of_two_number()
