@@ -2,7 +2,9 @@
 
 
 /* style body */
-body {}
+body {
+    background-color: white;
+}
 
 
 
@@ -11,7 +13,9 @@ body {}
 /* Style the input fields and labels */
 
 /* common rule for input group */
-.input-group {}
+.input-group {
+    margin-bottom: 20px;
+}
 
 /* rule for labels */
 .input-group label {}
