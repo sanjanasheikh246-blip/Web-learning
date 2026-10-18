@@ -1,1 +1,20 @@
 /* Add your design in this file */
+
+
+/* style body */
+body {}
+
+
+
+
+
+/* Style the input fields and labels */
+
+/* common rule for input group */
+.input-group {}
+
+/* rule for labels */
+.input-group label {}
+
+/* rule for input  */
+.input-group input {}
