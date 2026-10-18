@@ -4,6 +4,12 @@
 /* style body */
 body {
     background-color: white;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
 }
 
 
