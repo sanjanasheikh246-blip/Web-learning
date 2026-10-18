@@ -9,7 +9,8 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-
+    justify-content: center; /* Vertical alignment */
+    align-items: center;     /* Horizontal alignment */
 }
 
 
