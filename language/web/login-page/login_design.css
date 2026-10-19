@@ -24,7 +24,17 @@ body {
 }
 
 /* rule for labels */
-.input-group label {}
+.input-group label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: blueviolet;
+}
 
 /* rule for input  */
-.input-group input {}
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 16px;
+    
+}
