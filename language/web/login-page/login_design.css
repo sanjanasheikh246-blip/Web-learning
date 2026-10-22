@@ -14,13 +14,17 @@ body {
 
 
 
-
-
-/* Style the input fields and labels */
-
-/* common rule for input group */
+/* Common rule for input group */
 .input-group {
     margin-bottom: 20px;
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover rule */
+.input-group:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* rule for labels */
