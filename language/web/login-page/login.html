@@ -34,10 +34,12 @@
     </button>
     <script>
         const loginBtn = document.getElementById('login-btn');
-
+        const userName = document.getElementById('username');
+     
         loginBtn.addEventListener('click', function () {
-
-            alert('You just pressed the login button');
+            console.log('testing');
+            console.log(userName.value);
+            alert(`You just pressed the login button ${userName.value}`);
         });
 
     </script>
