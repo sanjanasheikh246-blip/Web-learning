@@ -29,9 +29,17 @@
    
     
     <!-- login button -->
-    <button type="submit" class="login-btn">
+    <button type="submit" class="login-btn" id="login-btn">
        <i class="fa-solid fa-right-to-bracket"></i>Login
     </button>
-   
+    <script>
+        const loginBtn = document.getElementById('login-btn');
+
+        loginBtn.addEventListener('click', function () {
+
+            alert('You just pressed the login button');
+        });
+
+    </script>
 </body>
 </html>
