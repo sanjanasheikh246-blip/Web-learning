@@ -9,29 +9,19 @@
 </head>
 <body>
     <h1> Your To Do </h1>
-    <ul class="todo-list">
-        <li class="todo-item completed">            
-            <input type="checkbox" id="task1" checked>
-           
-            <label for="task1"><span>This is an example of task01</span></label>
-            <i class="fa-solid fa-xmark"></i>
-        </li>
-        <li class="todo-item">
-            <input type="checkbox" id="task2">
-            <label for="task2"><span>This is an example of task02</span></label>
-            <i class="fa-solid fa-xmark"></i>
-        </li>
-        <li class="todo-item completed">
-            <input type="checkbox" id="task3" checked>
-            <label for="task3"><span>This is an example of task03</span></label>
-            <i class="fa-solid fa-xmark"></i>
-        </li>
-        <li class="todo-item">
-            <input type="checkbox" id="task4">
-            <label for="task4"><span>This is an example of task04</span></label>
-            <i class="fa-solid fa-xmark"></i>
-        </li>
-    </ul>
+
+    <div id="todo-container"></div>
+
+    <script>
+        // Fetch and insert the todo list HTML file
+        fetch('todo_list.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('todo-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading todo list:', error));
+    </script>
+
 </body>
 </html>
 </head>
