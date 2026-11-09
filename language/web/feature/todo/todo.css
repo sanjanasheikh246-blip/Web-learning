@@ -1,4 +1,13 @@
 body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center; /* Vertical alignment */
+    align-items: center;     /* Horizontal alignment */
+    font-family: Arial, Helvetica, sans-serifs;
+}
+body {
     font-family: Arial, sans-serif;
     margin: 40px;
     background-color: #f9f9f9;
