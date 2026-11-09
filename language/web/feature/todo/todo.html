@@ -11,16 +11,8 @@
     <h1> Your To Do </h1>
 
     <div id="todo-container"></div>
-
-    <script>
-        // Fetch and insert the todo list HTML file
-        fetch('todo_list.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('todo-container').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading todo list:', error));
-    </script>
+    
+    <script src="todo.js"></script>
 
 </body>
 </html>
