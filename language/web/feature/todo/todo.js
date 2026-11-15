@@ -6,7 +6,8 @@ const my_todos = [
     'Move to varsity',
     'Submit assignment',
     'Meet some friends',
-    'Get back to home'
+    'Get back to home',
+    'Get back to sleep'
 ];
 
 
