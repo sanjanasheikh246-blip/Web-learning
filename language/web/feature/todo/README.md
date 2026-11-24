@@ -2,10 +2,10 @@
 
 ## CRUD operation
 
-1. Create(Done)
+1. Create (Done)
 2. Read
 3. Update
-4. Delete
+4. Delete (Active)
 5. List (Done)
 
 ## Start with List page
