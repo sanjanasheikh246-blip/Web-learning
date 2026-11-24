@@ -41,3 +41,9 @@ function renderTodoList() {
 
 // Render the items on page load
 document.addEventListener('DOMContentLoaded', renderTodoList);
+
+
+const addTodoButton = document.getElementById('add-todo-btn');
+addTodoButton.addEventListener('click', () => {
+        alert('New todo added');
+    });
