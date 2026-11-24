@@ -43,7 +43,44 @@ function renderTodoList() {
 document.addEventListener('DOMContentLoaded', renderTodoList);
 
 // related to add a new todo
+
 const addTodoButton = document.getElementById('add-todo-btn');
+const todoDialog = document.getElementById('todo-dialog');
+const todoForm = document.getElementById('todo-form');
+const todoInput = document.getElementById('todo-input');
+const cancelBtn = document.getElementById('cancel-btn');
+const todoList = document.getElementById('todo-list');
+
+// Open dialog
 addTodoButton.addEventListener('click', () => {
-        alert('New todo added');
-    });
+    todoDialog.showModal();
+    todoInput.focus();
+});
+
+// Close dialog on Cancel
+cancelBtn.addEventListener('click', () => {
+    todoForm.reset();
+    todoDialog.close();
+});
+
+// Close dialog when clicking outside the modal box
+todoDialog.addEventListener('click', (event) => {
+    if (event.target === todoDialog) {
+        todoForm.reset();
+        todoDialog.close();
+    }
+});
+
+// Handle form submission (supports Enter key and Add button)
+todoForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const taskText = todoInput.value.trim();
+
+    if (taskText) {
+        my_todos.unshift(taskText);
+        renderTodoList();
+    }
+
+    todoForm.reset();
+    todoDialog.close();
+});
