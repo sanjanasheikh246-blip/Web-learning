@@ -5,7 +5,7 @@
 1. Create (Done)
 2. Read
 3. Update
-4. Delete (Active)
+4. Delete (Done)
 5. List (Done)
 
 ## Start with List page
