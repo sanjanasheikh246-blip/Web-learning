@@ -10,11 +10,14 @@ const my_todos = [
     'Get back to sleep'
 ];
 
-
+const container = document.getElementById('todo-container');
+const addTodoButton = document.getElementById('add-todo-btn');
+const todoDialog = document.getElementById('todo-dialog');
+const todoForm = document.getElementById('todo-form');
+const todoInput = document.getElementById('todo-input');
+const cancelBtn = document.getElementById('cancel-btn');
 
 function renderTodoList() {
-    const container = document.getElementById('todo-container');
-    
     // Create the list element
     const ul = document.createElement('ul');
     ul.className = 'todo-list';
@@ -23,12 +26,16 @@ function renderTodoList() {
     my_todos.forEach((todoText, index) => {
         const li = document.createElement('li');
         li.className = 'todo-item';
+        li.dataset.index = index;
 
         const id = `task-${index + 1}`;
 
         li.innerHTML = `
             <input type="checkbox" id="${id}">
             <label for="${id}"><span>${todoText}</span></label>
+            <button type="button" class="delete-todo-btn" aria-label="Delete ${todoText}">
+                <i class="fa-solid fa-trash"></i>
+            </button>
         `;
 
         ul.appendChild(li);
@@ -39,17 +46,22 @@ function renderTodoList() {
     container.appendChild(ul);
 }
 
+// Delete item using event delegation on #todo-container
+container.addEventListener('click', (event) => {
+    const deleteBtn = event.target.closest('.delete-todo-btn');
+    if (!deleteBtn) return;
+
+    const item = deleteBtn.closest('.todo-item');
+    const index = Number(item?.dataset.index);
+
+    if (!Number.isNaN(index) && index >= 0 && index < my_todos.length) {
+        my_todos.splice(index, 1);
+        renderTodoList();
+    }
+});
+
 // Render the items on page load
 document.addEventListener('DOMContentLoaded', renderTodoList);
-
-// related to add a new todo
-
-const addTodoButton = document.getElementById('add-todo-btn');
-const todoDialog = document.getElementById('todo-dialog');
-const todoForm = document.getElementById('todo-form');
-const todoInput = document.getElementById('todo-input');
-const cancelBtn = document.getElementById('cancel-btn');
-const todoList = document.getElementById('todo-list');
 
 // Open dialog
 addTodoButton.addEventListener('click', () => {
