@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-     <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
     <div class="header-row">
@@ -25,9 +26,17 @@
             </div>
         </form>
     </dialog>
-    
-    <script src="todo.js"></script>
 
+    <dialog id="view-dialog">
+        <div class="view-dialog-content">
+            <h2>To Do Details</h2>
+            <p id="view-todo-text"></p>
+            <div class="dialog-actions">
+                <button type="button" id="close-view-btn">Close</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="todo.js"></script>
 </body>
 </html>
-</head>
