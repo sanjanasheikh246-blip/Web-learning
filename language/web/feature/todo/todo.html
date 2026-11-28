@@ -8,7 +8,28 @@
      <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-    
+    <!-- Like a Scaffold / Column -->
+  <div class="page">
+    <!-- Top bar: like a Row -->
+    <header class="row header">
+      <h1 class="title">Dashboard</h1>
+      <button id="action-btn" class="btn">Add Todo</button>
+    </header>
+
+    <!-- Main area: like a Row with Expanded cards -->
+    <section class="card">
+        <h2>Left Panel</h2>
+        <p>Grows to fill available width with <code>flex: 1</code>.</p>
+      </section>
+      <section class="card">
+        <h2>Left Panel</h2>
+        <p>Grows to fill available width with <code>flex: 2</code>.</p>
+      </section>
+      <section class="card">
+        <h2>Left Panel</h2>
+        <p>Grows to fill available width with <code>flex: 3</code>.</p>
+      </section>
+  </div>
     
     <script src="todo.js"></script>
 
